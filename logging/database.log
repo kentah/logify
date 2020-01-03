@@ -1,0 +1,81 @@
+2020-01-02 21:46:45,115:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 93, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-02 21:52:44,006:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 93, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-02 21:52:58,218:database.Database:cursor already closed
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 93, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.InterfaceError: cursor already closed
+2020-01-02 21:54:23,710:database.Database:relation "agency1" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 93, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency1" already exists
+
+2020-01-02 21:55:27,605:database.Database:relation "agency1" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 93, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency1" already exists
+
+2020-01-02 22:00:01,203:database.Database:relation "agency1" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 94, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency1" already exists
+
+2020-01-02 22:01:03,162:database.Database:relation "agency1" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 96, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency1" already exists
+
+2020-01-02 22:02:21,672:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-02 22:03:44,911:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-02 22:05:08,742:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-02 22:05:44,006:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-02 22:23:10,444:database.Database:invalid dsn: invalid connection option "database"
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 93, in create_tables
+    self.conn = psycopg2.connect('database={}'.format(db['database']))
+  File "/Users/kentah/Code/appdev/logjam2/logjamEnv/lib/python3.8/site-packages/psycopg2/__init__.py", line 125, in connect
+    dsn = _ext.make_dsn(dsn, **kwargs)
+  File "/Users/kentah/Code/appdev/logjam2/logjamEnv/lib/python3.8/site-packages/psycopg2/extensions.py", line 152, in make_dsn
+    parse_dsn(dsn)
+psycopg2.ProgrammingError: invalid dsn: invalid connection option "database"
+
+2020-01-02 22:50:02,621:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
