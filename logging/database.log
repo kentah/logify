@@ -79,3 +79,113 @@ Traceback (most recent call last):
     logger.debug(self.cursor.execute(t))
 psycopg2.errors.DuplicateTable: relation "agency" already exists
 
+2020-01-04 14:34:36,462:database.Database:syntax error at or near "CREATE"
+LINE 3:     CREATE TABLE contacts(
+            ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near "CREATE"
+LINE 3:     CREATE TABLE contacts(
+            ^
+
+2020-01-04 14:36:24,069:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-04 14:37:37,440:database.Database:syntax error at or near "PRIMSRY"
+LINE 3:         id SERIAL PRIMSRY KEY,
+                          ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near "PRIMSRY"
+LINE 3:         id SERIAL PRIMSRY KEY,
+                          ^
+
+2020-01-04 14:52:34,262:database.Database:syntax error at or near "TABLE"
+LINE 2:     INSERT INTO TABLE agency(
+                        ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.SyntaxError: syntax error at or near "TABLE"
+LINE 2:     INSERT INTO TABLE agency(
+                        ^
+
+2020-01-04 14:53:31,702:database.Database:numeric field overflow
+DETAIL:  A field with precision 2, scale 2 must round to an absolute value less than 1.
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.NumericValueOutOfRange: numeric field overflow
+DETAIL:  A field with precision 2, scale 2 must round to an absolute value less than 1.
+
+2020-01-04 15:58:02,291:database.Database:syntax error at or near "s_id"
+LINE 4:         s_id INTEGER,
+                ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near "s_id"
+LINE 4:         s_id INTEGER,
+                ^
+
+2020-01-04 17:30:32,496:database.Database:syntax error at or near "CHAR"
+LINE 9:         run_day CHAR(2),l
+                        ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near "CHAR"
+LINE 9:         run_day CHAR(2),l
+                        ^
+
+2020-01-04 17:31:14,457:database.Database:syntax error at or near "INTEGER"
+LINE 11:         catNum INTEGER,
+                        ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near "INTEGER"
+LINE 11:         catNum INTEGER,
+                        ^
+
+2020-01-04 17:32:24,124:database.Database:syntax error at or near "order"
+LINE 2:     CREATE TABLE order(
+                         ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near "order"
+LINE 2:     CREATE TABLE order(
+                         ^
+
+2020-01-04 17:33:38,350:database.Database:syntax error at or near "DEFULT"
+LINE 10:         pi BOOLEAN DEFULT false,
+                            ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near "DEFULT"
+LINE 10:         pi BOOLEAN DEFULT false,
+                            ^
+
+2020-01-04 17:34:43,992:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-04 18:08:34,755:database.Database:column "commisssion" of relation "client" does not exist
+LINE 3:         name, address, a_id, commisssion
+                                     ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.UndefinedColumn: column "commisssion" of relation "client" does not exist
+LINE 3:         name, address, a_id, commisssion
+                                     ^
+

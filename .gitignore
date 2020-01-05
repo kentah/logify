@@ -64,6 +64,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+logjamEnv/
 
-*.swo
+
+*swo
 *.swp
+

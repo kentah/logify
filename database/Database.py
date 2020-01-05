@@ -6,7 +6,7 @@ import logging
 
 from config import db
 from database.setupSchema import tables
-
+from database.setupData import data
 
 # logging setup
 logger = logging.getLogger(__name__)
@@ -85,6 +85,27 @@ class Database:
         finally:
             if self.conn is not None:
                 self.conn.close()
+
+    def populate_dummy_data(self):
+        try:
+            self.conn = psycopg2.connect('dbname={}'.format(db['database']))
+            #self.conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+            self.cursor = self.conn.cursor()
+            print('succesfully connected to db')
+            for d in data:
+                print(d)
+                logger.debug(self.cursor.execute(d))
+                logger.debug(self.conn.commit())
+            self.conn.close()
+            self.cursor.close()
+        except(Exception, psycopg2.DatabaseError) as err:
+            logger.exception(err)
+            self.conn.close()
+            self.cursor.close()
+        finally:
+            if self.conn is not None:
+                self.conn.close()
+
 
     @classmethod
     def get_connection(cls):
