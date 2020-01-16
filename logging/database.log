@@ -189,3 +189,85 @@ psycopg2.errors.UndefinedColumn: column "commisssion" of relation "client" does 
 LINE 3:         name, address, a_id, commisssion
                                      ^
 
+2020-01-15 21:33:32,905:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-15 21:33:32,965:database.Database:column "phone" of relation "contacts" does not exist
+LINE 8:         phone,
+                ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.UndefinedColumn: column "phone" of relation "contacts" does not exist
+LINE 8:         phone,
+                ^
+
+2020-01-15 21:34:19,892:database.Database:relation "agency" already exists
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.DuplicateTable: relation "agency" already exists
+
+2020-01-15 21:34:19,941:database.Database:column "phone" of relation "contacts" does not exist
+LINE 8:         phone,
+                ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.UndefinedColumn: column "phone" of relation "contacts" does not exist
+LINE 8:         phone,
+                ^
+
+2020-01-15 21:35:29,253:database.Database:syntax error at or near ","
+LINE 11:         catNum VARCHAR(4),,
+                                   ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near ","
+LINE 11:         catNum VARCHAR(4),,
+                                   ^
+
+2020-01-15 21:35:29,296:database.Database:relation "media" does not exist
+LINE 2:     INSERT INTO media(
+                        ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.UndefinedTable: relation "media" does not exist
+LINE 2:     INSERT INTO media(
+                        ^
+
+2020-01-15 21:39:21,624:database.Database:syntax error at or near ","
+LINE 11:         catNum VARCHAR(4),,
+                                   ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 77, in create_tables
+    logger.debug(self.cursor.execute(t))
+psycopg2.errors.SyntaxError: syntax error at or near ","
+LINE 11:         catNum VARCHAR(4),,
+                                   ^
+
+2020-01-15 21:39:21,676:database.Database:relation "media" does not exist
+LINE 2:     INSERT INTO media(
+                        ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.UndefinedTable: relation "media" does not exist
+LINE 2:     INSERT INTO media(
+                        ^
+
+2020-01-15 21:47:03,945:database.Database:syntax error at or near ")"
+LINE 11:     )
+             ^
+Traceback (most recent call last):
+  File "/Users/kentah/Code/appdev/logjam2/database/Database.py", line 97, in populate_dummy_data
+    logger.debug(self.cursor.execute(d))
+psycopg2.errors.SyntaxError: syntax error at or near ")"
+LINE 11:     )
+             ^
+

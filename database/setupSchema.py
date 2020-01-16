@@ -52,8 +52,9 @@ tables = [
         email VARCHAR(35),
         r_id INTEGER,
         c_id INTEGER,
-        pnone BIGINT,
+        phone BIGINT,
         fax BIGINT,
+        type CHAR(6),
         a_id INTEGER
    )
     ''',
@@ -114,7 +115,7 @@ tables = [
         length SMALLINT,
         c_id INTEGER,
         active BOOLEAN DEFAULT true NOT NULL,
-        catNum INTEGER,
+        catNum VARCHAR(4),
         ul BOOLEAN DEFAULT false NOT NULL,
         advertiser CHAR(30),
         product CHAR(20),
